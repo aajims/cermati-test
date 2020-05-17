@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="#">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Jimmy Febriadi | cermati.com Front-end Developer Entry Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="notification-header">
+        <p>By accessing and using this website, you acknowledge that you have read and understand our <a href="#"> Cookie Policy</a>, <a href="#"> Privacy Policy</a>, and our <a href="#"> Terms of Service</a>.</p><button onclick="TopFunct()" class="btn btn-primary">Got it</button>
+      </div>
+    </div>
+    <div class="header">
+      <div class="logo">
+        <img src="assets/images/y-logo-white.png"/>
+      </div>
+      <div class="content">
+        <h2>Hello! I'm Jimmy Febriadi </h2>
+        <h3>Consult, Design, and Develop Websites</h3>
+        <p>Have something great in mind? Feel free to contact me.</p>
+        <p>I'll help you to make it happen.</p>
+        <button class="btn btn-contact">Let's Make Contact</button>
+      </div>
+    </div>
+    <div class="highlight">
+      <h2> How Can I Help You?</h2>
+      <p class="hight_p"> Our work then targeted, best practices outcomes social innovation synergy.<br/>  Venture philanthropy, revolutionary inclusive policymaker relief. User-centered program areas scale.</p>
+      <div class="highlight_sub">
+        <div class="row">
+          <div class="highlight_body">
+            <div class="highlight_content">
+              <h3> Consult</h3><span><i class="fa fa-2x fa-comments-o abu" aria-hidden="true"></i></span> 
+              <p> Co-create, design thinking; strengthen infrastructure resist granular. Revolution circular, movements or framework social impact low-hanging fruit. Save the world compelling revolutionary progress.</p>
+            </div>
+          </div>
+          <div class="highlight_body">
+            <div class="highlight_content">
+              <h3> Design</h3><span><i class="fa fa-2x fa-paint-brush abu" aria-hidden="true"></i></span> 
+              <p> Policymaker collaborates collective impact humanitarian shared value vocabulary inspire issue outcomes agile. Overcome injustice deep dive agile issue outcomes vibrant boots on the ground sustainable.</p>
+            </div>
+          </div>
+          <div class="highlight_body">
+            <div class="highlight_content">
+              <h3> Develop</h3><span><i class="fa fa-2x fa-cubes abu" aria-hidden="true"></i></span> 
+              <p> Revolutionary circular, movements a or impact framework social impact low-hanging. Save the compelling revolutionary inspire progress. Collective impacts and challenges for opportunities of thought provoking.</p>
+            </div>
+          </div>
+          <div class="highlight_body">
+            <div class="highlight_content">
+              <h3> Marketing</h3><span><i class="fa fa-2x fa-bullhorn abu" aria-hidden="true"></i></span> 
+              <p> Peaceful, vibrant paradigm, collaborative cities. Shared vocabulary agile, replicable, effective altruism youth. Mobilize commitment to overcome injustice resilient, uplift social transparent effective.</p>
+            </div>
+          </div>
+          <div class="highlight_body">
+            <div class="highlight_content">
+              <h3> Manage</h3><span><i class="fa fa-2x fa-tasks abu" aria-hidden="true"></i></span> 
+              <p> Change-makers innovation or shared unit of analysis. Overcome injustice outcomes strategize vibrant boots on the ground sustainable. Optimism, effective altruism invest optimism corporate social.</p>
+            </div>
+          </div>
+          <div class="highlight_body">
+            <div class="highlight_content">
+              <h3> Evolve</h3><span><i class="fa fa-2x fa-line-chart abu" aria-hidden="true"></i></span> 
+              <p> Activate catalyze and impact contextualize humanitarian. Unit of analysis overcome injustice storytelling altruism. Thought leadership mass incarceration. Outcomes big data, fairness, social game-changer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p> © 2020 Jimmy Febriadi. All rights reserved.​</p>
+    </div>
+    <div class="panel" id="panel" style="display: none;">
+      <div class="panel_content">
+        <button type="button" onclick="Closed()" class="close">&times;</button>
+        <h3> Get latest updates in web technologies</h3>
+        <p> I write articles related to web technologies, such as design trends, development tools, UI/UX case studies and reviews, and more. Sign up to my newsletter to get them all.</p>
+        <form>
+          <div class="panel_input">
+            <input type="text" class="panel_form" placeholder="Email Address"/><button class="btn btn-count"> Count Me In!</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var b = false;
+      function Closed() {
+        var x = document.getElementById("panel");
+        x.style.display = "none";
+        b = true;
+        setTimeout(function(){ b = false; }, (10 * 60 * 1000));
+      }
+      var ScrollFunc = function () {
+        var x = document.getElementById("panel");
+          var y = window.scrollY;
+          if (y >= 550 && b === false) {
+            x.style.display = "block"
+          } 
+      };
+      window.addEventListener("scroll", ScrollFunc);
+      function TopFunct() {
+      if (window.scrollY>0) {
+          window.scrollTo(0,window.scrollY-20)
+          setTimeout("TopFunct()",10)
+        }
+      }
+    </script>
+  </body>
+</html>
